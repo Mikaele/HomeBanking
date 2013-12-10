@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cpf:</b>
+  <%= @correntistum.cpf %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @correntistum.nome %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @correntistum.endereco %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @correntistum.email %>
+</p>
+
+<p>
+  <b>Senha:</b>
+  <%= @correntistum.senha %>
+</p>
+
+
+<%= link_to 'Edit', edit_correntistum_path(@correntistum) %> |
+<%= link_to 'Back', correntista_path %>

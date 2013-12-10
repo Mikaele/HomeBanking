@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20131210224052) do
 
-  create_table "contas", :id => false, :force => true do |t|
+  create_table "conta", :id => false, :force => true do |t|
     t.integer  "numero"
     t.string   "primeiro_corr", :limit => 12
     t.string   "segundo_corr",  :limit => 12
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20131210224052) do
     t.datetime "updated_at",                  :null => false
   end
 
-  create_table "correntistas", :id => false, :force => true do |t|
+  create_table "correntista", :id => false, :force => true do |t|
     t.string   "cpf",        :limit => 12
     t.string   "nome",       :limit => 35
     t.string   "endereco",   :limit => 45
