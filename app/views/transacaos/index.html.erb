@@ -1,0 +1,33 @@
+<h1>Listing transacaos</h1>
+
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Tipo</th>
+    <th>Nro conta</th>
+    <th>Nro conta transf</th>
+    <th>Valor</th>
+    <th>Data</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transacaos.each do |transacao| %>
+  <tr>
+    <td><%= transacao.codigo %></td>
+    <td><%= transacao.tipo %></td>
+    <td><%= transacao.nro_conta %></td>
+    <td><%= transacao.nro_conta_transf %></td>
+    <td><%= transacao.valor %></td>
+    <td><%= transacao.data %></td>
+    <td><%= link_to 'Show', transacao %></td>
+    <td><%= link_to 'Edit', edit_transacao_path(transacao) %></td>
+    <td><%= link_to 'Destroy', transacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transacao', new_transacao_path %>
