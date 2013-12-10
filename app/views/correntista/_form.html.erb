@@ -1,10 +1,10 @@
-<%= form_for(@correntistum) do |f| %>
-  <% if @correntistum.errors.any? %>
+<%= form_for(@correntista) do |f| %>
+  <% if @correntista.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@correntistum.errors.count, "error") %> prohibited this correntistum from being saved:</h2>
+      <h2><%= pluralize(@correntista.errors.count, "error") %> prohibited this correntista from being saved:</h2>
 
       <ul>
-      <% @correntistum.errors.full_messages.each do |msg| %>
+      <% @correntista.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
