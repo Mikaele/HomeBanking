@@ -17,7 +17,7 @@ class CorrentistaControllerTest < ActionController::TestCase
   end
 
   test "should create correntistum" do
-    assert_difference('Correntistum.count') do
+    assert_difference('Correntista.count') do
       post :create, correntistum: { cpf: @correntistum.cpf, email: @correntistum.email, endereco: @correntistum.endereco, nome: @correntistum.nome, senha: @correntistum.senha }
     end
 
@@ -40,7 +40,7 @@ class CorrentistaControllerTest < ActionController::TestCase
   end
 
   test "should destroy correntistum" do
-    assert_difference('Correntistum.count', -1) do
+    assert_difference('Correntista.count', -1) do
       delete :destroy, id: @correntistum
     end
 
