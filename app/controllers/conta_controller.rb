@@ -2,7 +2,7 @@ class ContaController < ApplicationController
   # GET /conta
   # GET /conta.json
   def index
-    @conta = Contum.all
+    @conta = Conta.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,42 +13,42 @@ class ContaController < ApplicationController
   # GET /conta/1
   # GET /conta/1.json
   def show
-    @contum = Contum.find(params[:id])
+    @Conta = Conta.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @contum }
+      format.json { render json: @Conta }
     end
   end
 
   # GET /conta/new
   # GET /conta/new.json
   def new
-    @contum = Contum.new
+    @Conta = Conta.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @contum }
+      format.json { render json: @Conta }
     end
   end
 
   # GET /conta/1/edit
   def edit
-    @contum = Contum.find(params[:id])
+    @Conta = Conta.find(params[:id])
   end
 
   # POST /conta
   # POST /conta.json
   def create
-    @contum = Contum.new(params[:contum])
+    @Conta = Conta.new(params[:Conta])
 
     respond_to do |format|
-      if @contum.save
-        format.html { redirect_to @contum, notice: 'Contum was successfully created.' }
-        format.json { render json: @contum, status: :created, location: @contum }
+      if @Conta.save
+        format.html { redirect_to @Conta, notice: 'Conta was successfully created.' }
+        format.json { render json: @Conta, status: :created, location: @Conta }
       else
         format.html { render action: "new" }
-        format.json { render json: @contum.errors, status: :unprocessable_entity }
+        format.json { render json: @Conta.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,15 +56,15 @@ class ContaController < ApplicationController
   # PUT /conta/1
   # PUT /conta/1.json
   def update
-    @contum = Contum.find(params[:id])
+    @Conta = Conta.find(params[:id])
 
     respond_to do |format|
-      if @contum.update_attributes(params[:contum])
-        format.html { redirect_to @contum, notice: 'Contum was successfully updated.' }
+      if @Conta.update_attributes(params[:Conta])
+        format.html { redirect_to @Conta, notice: 'Conta was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @contum.errors, status: :unprocessable_entity }
+        format.json { render json: @Conta.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -72,8 +72,8 @@ class ContaController < ApplicationController
   # DELETE /conta/1
   # DELETE /conta/1.json
   def destroy
-    @contum = Contum.find(params[:id])
-    @contum.destroy
+    @Conta = Conta.find(params[:id])
+    @Conta.destroy
 
     respond_to do |format|
       format.html { redirect_to conta_url }
