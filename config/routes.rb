@@ -14,6 +14,9 @@ Homebanking::Application.routes.draw do
 
   resources :conta
 
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
