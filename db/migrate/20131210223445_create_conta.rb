@@ -7,6 +7,7 @@ class CreateConta < ActiveRecord::Migration
       t.string :terceiro_corr ,:limit=>12
       t.float :limite
       t.float :valor
+      t.references :correntistum
 
       t.timestamps
     end
