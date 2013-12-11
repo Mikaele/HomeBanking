@@ -5263,3 +5263,134 @@ Served asset /transacaos.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 21:30:46 -0200
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/correntista/sign_in" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 22.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:14 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-12-11 21:32:22 -0200
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-12-11 21:32:32 -0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Processing by ContaController#index as HTML
+Completed 401 Unauthorized in 4ms
+
+
+Started GET "/correntista/sign_in" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 65ms (Views: 45.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
+Served asset /application.js - 304 Not Modified (1ms)
