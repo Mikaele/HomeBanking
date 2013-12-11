@@ -11,39 +11,62 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131210224052) do
+ActiveRecord::Schema.define(:version => 20131211221940) do
 
   create_table "conta", :id => false, :force => true do |t|
     t.integer  "numero"
-    t.string   "primeiro_corr",   :limit => 12
-    t.string   "segundo_corr",    :limit => 12
-    t.string   "terceiro_corr",   :limit => 12
+    t.string   "primeiro_corr", :limit => 12
+    t.string   "segundo_corr",  :limit => 12
+    t.string   "terceiro_corr", :limit => 12
     t.float    "limite"
     t.float    "valor"
-    t.integer  "correntistum_id"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
   create_table "correntista", :id => false, :force => true do |t|
-    t.string   "cpf",        :limit => 12
-    t.string   "nome",       :limit => 35
-    t.string   "endereco",   :limit => 45
-    t.string   "email",      :limit => 25
-    t.string   "senha",      :limit => 10
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.string   "cpf",                    :limit => 12
+    t.string   "nome",                   :limit => 35
+    t.string   "endereco",               :limit => 45
+    t.string   "email",                  :limit => 25
+    t.string   "senha",                  :limit => 10
+    t.datetime "created_at",                                           :null => false
+    t.datetime "updated_at",                                           :null => false
+    t.string   "encrypted_password",                   :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                        :default => 0,  :null => false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "correntista", ["email"], :name => "index_correntista_on_email", :unique => true
+  add_index "correntista", ["reset_password_token"], :name => "index_correntista_on_reset_password_token", :unique => true
 
   create_table "funcionarios", :id => false, :force => true do |t|
     t.integer  "codigo"
-    t.string   "nome",       :limit => 35
-    t.string   "email",      :limit => 25
-    t.string   "senha",      :limit => 10
-    t.string   "funcao",     :limit => 9,  :null => false
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.string   "nome",                   :limit => 35
+    t.string   "email",                  :limit => 25
+    t.string   "senha",                  :limit => 10
+    t.string   "funcao",                 :limit => 9,                  :null => false
+    t.datetime "created_at",                                           :null => false
+    t.datetime "updated_at",                                           :null => false
+    t.string   "encrypted_password",                   :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                        :default => 0,  :null => false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "funcionarios", ["email"], :name => "index_funcionarios_on_email", :unique => true
+  add_index "funcionarios", ["reset_password_token"], :name => "index_funcionarios_on_reset_password_token", :unique => true
 
   create_table "transacaos", :id => false, :force => true do |t|
     t.integer  "codigo"

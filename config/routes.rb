@@ -1,4 +1,8 @@
 Homebanking::Application.routes.draw do
+  devise_for :correntista
+
+  devise_for :funcionarios
+
   resources :transacaos
 
 

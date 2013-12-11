@@ -1,4 +1,6 @@
 class TransacaosController < ApplicationController
+  before_filter :authenticate_correntistum!
+  before_filter :authenticate_funcionario!
   # GET /transacaos
   # GET /transacaos.json
   def index
