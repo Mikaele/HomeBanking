@@ -4,7 +4,10 @@ class TransacaosController < ApplicationController
   # GET /transacaos
   # GET /transacaos.json
   def index
-    @transacaos = Transacao.all
+    #@transacaos = Transacao.all
+    @numero_conta = Contum.find_by_primeiro_corr(current_correntistum.cpf)
+    @transacaos = Transacao.where(:nro_conta=>@numero_conta.numero)
+    #@transacaos = Transacao.where(:nro_conta=>current_correntistum.contum.numero)
 
     respond_to do |format|
       format.html # index.html.erb

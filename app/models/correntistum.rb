@@ -8,4 +8,7 @@ class Correntistum < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :cpf, :email, :endereco, :nome, :senha
+
+  has_one :contum
+
 end
