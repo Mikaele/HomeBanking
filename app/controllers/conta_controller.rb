@@ -1,6 +1,6 @@
 class ContaController < ApplicationController
   before_filter :authenticate_funcionario! ,:only=>[:new,:create,:destroy,:update]
-  before_filter :authenticate_correntistum!,:except=>[:index,:saque]
+  before_filter :authenticate_correntistum!,:except=>[:index,:saque,:deposito]
 
 
   # GET /conta
@@ -109,6 +109,15 @@ class ContaController < ApplicationController
         format.html { redirect_to "",alert: "Saldo insdiponivel" }
         format.json { head :no_content }
       end
+    end
+  end
+
+  def deposito
+    @conta=Contum.find(params[:conta])
+    @conta.update_attributes(:saldo=>params[:saque])
+    respond_to do |format|
+      format.html { redirect_to "",alert: "Saldo insdiponivel" }
+      format.json { head :no_content }
     end
   end
 end

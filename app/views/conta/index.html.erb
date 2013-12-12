@@ -29,14 +29,24 @@
 </table>
 
 <br />
-<div class="btn-group" data-toggle="buttons-checkbox">
   <a class="btn collapse-data-btn" data-toggle="collapse" href="#saque">Saque</a>
-</div>
+  <a class="btn collapse-data-btn" data-toggle="collapse" href="#deposito">Deposito</a>
+<br><br>
 <div id="saque" class="collapse">
+  Saque
   <form action="/saque">
     Nº Conta<input name="conta" type="number">
     Valor :<input name="saque" type="number">
     <input value="Sacar" type="submit" >
+  </form>
+</div>
+<br>
+<div id="deposito" class="collapse">
+  <form action="/deposito">
+  Deposito<br>
+    Nº Conta<input name="conta" type="number">
+    Valor :<input name="saque" type="number">
+    <input value="Depositar" type="submit" >
   </form>
 </div>
 
