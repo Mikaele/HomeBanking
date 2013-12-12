@@ -5394,3 +5394,521 @@ Served asset /transacaos.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 21:32:45 -0200
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/correntista/sign_in" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:08:09 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/correntista/sign_up" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:12:56 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/correntista" for 127.0.0.1 at 2013-12-11 22:13:32 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vhXtKd4te8bq3K2BFD/EKUWoTAm5uf+j016EL3fA8uA=", "correntistum"=>{"cpf"=>"98567822314", "nome"=>"Jose Maria", "endereco"=>"Rua das Oliveiras", "email"=>"jose@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCorrentistum Exists (0.3ms)[0m  SELECT 1 AS one FROM `correntista` WHERE `correntista`.`email` = BINARY 'jose@mail.com' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `correntista` (`cpf`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `endereco`, `last_sign_in_at`, `last_sign_in_ip`, `nome`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `senha`, `sign_in_count`, `updated_at`) VALUES ('98567822314', '2013-12-12 00:13:32', NULL, NULL, 'jose@mail.com', '$2a$10$whU4CNDfPEGv8ljkWvKYduwYLhmTtUj6KgsaDuTUQkmi6P2UT5QM2', 'Rua das Oliveiras', NULL, NULL, 'Jose Maria', NULL, NULL, NULL, NULL, 0, '2013-12-12 00:13:32')[0m
+  [1m[35m (95.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE `correntista` SET `last_sign_in_at` = '2013-12-12 00:13:32', `current_sign_in_at` = '2013-12-12 00:13:32', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-12-12 00:13:32' WHERE `correntista`.`` IS NULL
+Mysql2::Error: Unknown column 'correntista.' in 'where clause': UPDATE `correntista` SET `last_sign_in_at` = '2013-12-12 00:13:32', `current_sign_in_at` = '2013-12-12 00:13:32', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-12-12 00:13:32' WHERE `correntista`.`` IS NULL
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 224ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'correntista.' in 'where clause': UPDATE `correntista` SET `last_sign_in_at` = '2013-12-12 00:13:32', `current_sign_in_at` = '2013-12-12 00:13:32', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-12-12 00:13:32' WHERE `correntista`.`` IS NULL):
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:245:in `query'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:245:in `block in execute'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:245:in `execute'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:211:in `execute'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:238:in `exec_delete'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/database_statements.rb:96:in `update'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `update'
+  activerecord (3.2.13) lib/active_record/persistence.rb:359:in `update'
+  activerecord (3.2.13) lib/active_record/locking/optimistic.rb:68:in `update'
+  activerecord (3.2.13) lib/active_record/attribute_methods/dirty.rb:74:in `update'
+  activerecord (3.2.13) lib/active_record/timestamp.rb:71:in `update'
+  activerecord (3.2.13) lib/active_record/callbacks.rb:272:in `block in update'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:403:in `_run__1070821273888786471__update__2411977631043892981__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_update_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.13) lib/active_record/callbacks.rb:272:in `update'
+  activerecord (3.2.13) lib/active_record/persistence.rb:348:in `create_or_update'
+  activerecord (3.2.13) lib/active_record/callbacks.rb:264:in `block in create_or_update'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:403:in `_run__1070821273888786471__save__2411977631043892981__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.13) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.13) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.13) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.13) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.13) lib/active_record/transactions.rb:259:in `block (2 levels) in save'
+  activerecord (3.2.13) lib/active_record/transactions.rb:313:in `block in with_transaction_returning_status'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.13) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.13) lib/active_record/transactions.rb:311:in `with_transaction_returning_status'
+  activerecord (3.2.13) lib/active_record/transactions.rb:259:in `block in save'
+  activerecord (3.2.13) lib/active_record/transactions.rb:270:in `rollback_active_record_state!'
+  activerecord (3.2.13) lib/active_record/transactions.rb:258:in `save'
+  devise (3.2.2) lib/devise/models/trackable.rb:30:in `update_tracked_fields!'
+  devise (3.2.2) lib/devise/hooks/trackable.rb:7:in `block in <top (required)>'
+  warden (1.2.3) lib/warden/hooks.rb:14:in `call'
+  warden (1.2.3) lib/warden/hooks.rb:14:in `block in _run_callbacks'
+  warden (1.2.3) lib/warden/hooks.rb:9:in `each'
+  warden (1.2.3) lib/warden/hooks.rb:9:in `_run_callbacks'
+  warden (1.2.3) lib/warden/manager.rb:53:in `_run_callbacks'
+  warden (1.2.3) lib/warden/proxy.rb:179:in `set_user'
+  devise (3.2.2) lib/devise/controllers/sign_in_out.rb:43:in `sign_in'
+  devise (3.2.2) app/controllers/devise/registrations_controller.rb:101:in `sign_up'
+  devise (3.2.2) app/controllers/devise/registrations_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:436:in `_run__1274980795777250609__process_action__2771598418855104210__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/mapper.rb:42:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4461567109984733427__call__2411977631043892981__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/mikaele/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/mikaele/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/mikaele/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/mikaele/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/mikaele/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/mikaele/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started POST "/correntista" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vhXtKd4te8bq3K2BFD/EKUWoTAm5uf+j016EL3fA8uA=", "correntistum"=>{"cpf"=>"98567822314", "nome"=>"Jose Maria", "endereco"=>"Rua das Oliveiras", "email"=>"jose@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:Correntistum> at /home/mikaele/RubymineProjects/HomeBanking/app/models/correntistum.rb:2)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCorrentistum Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `correntista` WHERE `correntista`.`email` = BINARY 'jose@mail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 162ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:15:35 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/correntista" for 127.0.0.1 at 2013-12-11 22:16:11 -0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vhXtKd4te8bq3K2BFD/EKUWoTAm5uf+j016EL3fA8uA=", "correntistum"=>{"cpf"=>"98567822312", "nome"=>"Luiz Gustavo", "endereco"=>"Rua das Flores", "email"=>"luiz@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCorrentistum Exists (0.6ms)[0m  SELECT 1 AS one FROM `correntista` WHERE `correntista`.`email` = BINARY 'luiz@mail.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `correntista` (`cpf`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `endereco`, `last_sign_in_at`, `last_sign_in_ip`, `nome`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `senha`, `sign_in_count`, `updated_at`) VALUES ('98567822312', '2013-12-12 00:16:11', NULL, NULL, 'luiz@mail.com', '$2a$10$Z7/aB7PtG79.TpsG/4039.3UCfQKRSbEo.KpQ4TZfrihVejjD.Woy', 'Rua das Flores', NULL, NULL, 'Luiz Gustavo', NULL, NULL, NULL, NULL, 0, '2013-12-12 00:16:11')[0m
+  [1m[35m (105.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE `correntista` SET `last_sign_in_at` = '2013-12-12 00:16:11', `current_sign_in_at` = '2013-12-12 00:16:11', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-12-12 00:16:11' WHERE `correntista`.`cpf` = '98567822312'
+  [1m[36m (63.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 261ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:Contum> at /home/mikaele/RubymineProjects/HomeBanking/app/models/contum.rb:2)
+Processing by ContaController#index as HTML
+  [1m[35mCorrentistum Load (0.6ms)[0m  SELECT `correntista`.* FROM `correntista` WHERE `correntista`.`cpf` = '98567822312' LIMIT 1
+  [1m[36mContum Load (0.3ms)[0m  [1mSELECT `conta`.* FROM `conta` [0m
+  Rendered conta/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 27.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:12 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-11 22:16:19 -0200
+Processing by ContaController#index as HTML
+  [1m[35mCorrentistum Load (0.2ms)[0m  SELECT `correntista`.* FROM `correntista` WHERE `correntista`.`cpf` = '98567822312' LIMIT 1
+  [1m[36mContum Load (0.1ms)[0m  [1mSELECT `conta`.* FROM `conta` [0m
+  Rendered conta/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:20 -0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/correntista" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Processing by CorrentistaController#index as HTML
+  [1m[35mCorrentistum Load (0.5ms)[0m  SELECT `correntista`.* FROM `correntista` 
+  Rendered correntista/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /correntista.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /conta.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /funcionarios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.css?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /transacaos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-11 22:16:28 -0200
+Served asset /application.js - 304 Not Modified (0ms)

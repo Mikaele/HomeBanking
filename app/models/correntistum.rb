@@ -1,4 +1,5 @@
 class Correntistum < ActiveRecord::Base
+  set_primary_key :cpf
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
