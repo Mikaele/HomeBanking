@@ -28,12 +28,20 @@
 <% end %>
 </table>
 
-<form action="/saque">
-Nº Conta<input name="conta" type="number">
-Valor :<input name="saque" type="number">
- <input value="Sacar" type="submit" >
-</form>
+<br />
+<div class="btn-group" data-toggle="buttons-checkbox">
+  <a class="btn collapse-data-btn" data-toggle="collapse" href="#details">Saque</a>
+</div>
+<div id="details" class="collapse">
+  <form action="/saque">
+    Nº Conta<input name="conta" type="number">
+    Valor :<input name="saque" type="number">
+    <input value="Sacar" type="submit" >
+  </form>
+</div>
+
 
 <br />
 
 <%= link_to 'New Contum', new_contum_path %>
+
