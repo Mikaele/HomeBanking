@@ -116,11 +116,24 @@ class ContaController < ApplicationController
 
   def deposito
     @conta=Contum.find(params[:conta])
-    @conta.update_attributes(:saldo=>params[:saque])
+    @conta.update_attributes(:saldo=>params[:saque].to_f+@conta.saldo.to_f)
     Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
     respond_to do |format|
       format.html { redirect_to "",alert: "Saldo insdiponivel" }
       format.json { head :no_content }
     end
+  end
+
+  def trasferencia
+    @conta=Contum.find(params[:origem])
+    @conta2=Contum.find(params[:destino])
+    if (@conta.saldo.to_f+@conta.limite.to_f)-params[:valor].to_f>=0
+      aux=@conta.saldo.to_f-params[:valor].to_f
+      if aux <=0
+        @conta.limite=@conta.limite-aux
+        @conta2.update_attribute(:saldo=>@conta2.saldo+params[:valor].to_f)
+      end
+    end
+
   end
 end
