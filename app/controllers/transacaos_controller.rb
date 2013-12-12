@@ -1,6 +1,6 @@
 class TransacaosController < ApplicationController
-  before_filter :authenticate_correntistum!
-  before_filter :authenticate_funcionario!
+  before_filter :authenticate_correntistum!, :except => [:destroy,:update]
+  before_filter :authenticate_funcionario!, :except => [:show, :index]
   # GET /transacaos
   # GET /transacaos.json
   def index

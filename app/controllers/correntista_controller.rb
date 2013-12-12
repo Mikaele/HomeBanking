@@ -1,4 +1,6 @@
 class CorrentistaController < ApplicationController
+  before_filter :authenticate_funcionario!
+
   # GET /correntista
   # GET /correntista.json
   def index
