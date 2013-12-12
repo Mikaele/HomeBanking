@@ -83,4 +83,9 @@ class ContaController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def saque
+    @conta=Contum.find(params[:conta])
+    @conta
+  end
 end

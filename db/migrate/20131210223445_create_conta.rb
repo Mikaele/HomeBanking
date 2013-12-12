@@ -6,7 +6,7 @@ class CreateConta < ActiveRecord::Migration
       t.string :segundo_corr ,:limit=>12
       t.string :terceiro_corr ,:limit=>12
       t.float :limite
-      t.float :valor
+      t.float :saldo
 
       t.timestamps
     end

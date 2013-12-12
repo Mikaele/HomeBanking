@@ -3,6 +3,7 @@ Homebanking::Application.routes.draw do
 
   devise_for :funcionarios
 
+
   resources :transacaos
 
 

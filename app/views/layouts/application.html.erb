@@ -7,8 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container">
-<%= yield %>
+
+  <% if notice %>
+      <p class="alert alert-notice"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+      <p class="alert alert-error"><%= alert %></p>
+      <% end %>
+
+  <p class="navbar-text pull-right">
+    <% if funcionario_signed_in? %>
+        Ola <%= current_funcionario.funcao%> <strong> <%= current_funcionario.nome%></strong>.
+        <%= link_to 'Edit profile', edit_funcionario_registration_path, :class => 'navbar-link' %> |
+        <%= link_to "Logout", destroy_funcionario_session_path, method: :delete, :class => 'navbar-link'  %>
+    <% elsif correntistum_signed_in? %>
+        Ola <strong> <%= current_correntistum.nome%></strong>.
+        <%= link_to "Logout", destroy_correntistum_session_path, method: :delete, :class => 'navbar-link'  %>
+    <% end %>
+
+
+  <%= yield %>
 </div>
 </body>
 </html>

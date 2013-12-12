@@ -4,7 +4,6 @@ class CreateFuncionarios < ActiveRecord::Migration
       t.integer :codigo,:limit=>20
       t.string :nome ,:limit=>35
       t.string :email ,:limit=>25
-      t.string :senha ,:limit=>10
       t.column :funcao ,"enum('gerente','caixa','atendente') NOT NULL"
 
       t.timestamps

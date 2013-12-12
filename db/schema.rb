@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20131211221940) do
     t.string   "segundo_corr",  :limit => 12
     t.string   "terceiro_corr", :limit => 12
     t.float    "limite"
-    t.float    "valor"
+    t.float    "saldo"
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
   end
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20131211221940) do
     t.string   "nome",                   :limit => 35
     t.string   "endereco",               :limit => 45
     t.string   "email",                  :limit => 25
-    t.string   "senha",                  :limit => 10
     t.datetime "created_at",                                           :null => false
     t.datetime "updated_at",                                           :null => false
     t.string   "encrypted_password",                   :default => "", :null => false
@@ -50,7 +49,6 @@ ActiveRecord::Schema.define(:version => 20131211221940) do
     t.integer  "codigo"
     t.string   "nome",                   :limit => 35
     t.string   "email",                  :limit => 25
-    t.string   "senha",                  :limit => 10
     t.string   "funcao",                 :limit => 9,                  :null => false
     t.datetime "created_at",                                           :null => false
     t.datetime "updated_at",                                           :null => false
