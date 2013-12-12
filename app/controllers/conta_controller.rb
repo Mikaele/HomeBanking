@@ -1,6 +1,7 @@
 class ContaController < ApplicationController
-  before_filter :authenticate_correntistum!, :except => [:new,:create,:destroy,:update]
-  before_filter :authenticate_funcionario! ,:except=>[:index]
+  before_filter :authenticate_funcionario! ,:only=>[:new,:create,:index,:destroy,:update,:saque]
+  before_filter :authenticate_correntistum!,:except=>[:index,:transferencia,:deposito]
+
 
   # GET /conta
   # GET /conta.json
@@ -88,8 +89,9 @@ class ContaController < ApplicationController
     @conta=Contum.find(params[:conta])
     if @conta.saldo.to_f-params[:saque].to_f>=0
       @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     elsif (@conta.saldo.to_f+@conta.limite.to_f)-params[:saque].to_f>=0
@@ -99,15 +101,26 @@ class ContaController < ApplicationController
         @conta.saldo=0
       end
       @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     else
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saldo insdiponivel" }
+        format.html { redirect_to "",alert: "Saldo insdiponivel" }
         format.json { head :no_content }
       end
+    end
+  end
+
+  def deposito
+    @conta=Contum.find(params[:conta])
+    @conta.update_attributes(:saldo=>params[:saque])
+    Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
+    respond_to do |format|
+      format.html { redirect_to "",alert: "Saldo insdiponivel" }
+      format.json { head :no_content }
     end
   end
 end

@@ -82,4 +82,31 @@ class CorrentistaController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def saque
+    @conta=Contum.find(params[:conta])
+    if @conta.saldo.to_f-params[:saque].to_f>=0
+      @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
+      respond_to do |format|
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.json { head :no_content }
+      end
+    elsif (@conta.saldo.to_f+@conta.limite.to_f)-params[:saque].to_f>=0
+      aux=@conta.saldo.to_f-params[:saque].to_f
+      if aux<0
+        @conta.limite=@conta.limite.to_f+aux
+        @conta.saldo=0
+      end
+      @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
+      respond_to do |format|
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.json { head :no_content }
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to "",alert: "Saldo insdiponivel" }
+        format.json { head :no_content }
+      end
+    end
+  end
+
 end
