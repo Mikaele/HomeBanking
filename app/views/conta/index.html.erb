@@ -1,6 +1,6 @@
 <h1>Listing conta</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Numero</th>
     <th>Primeiro corr</th>
@@ -31,6 +31,8 @@
 <br />
   <a class="btn collapse-data-btn" data-toggle="collapse" href="#saque">Saque</a>
   <a class="btn collapse-data-btn" data-toggle="collapse" href="#deposito">Deposito</a>
+<a class="btn collapse-data-btn" data-toggle="collapse" href="#pagamento">Pagamentos de Contas</a>
+<a class="btn collapse-data-btn" data-toggle="collapse" href="#transferencia">Tranferencia</a>
 <br><br>
 <div id="saque" class="collapse">
   Saque
@@ -44,8 +46,25 @@
 <div id="deposito" class="collapse">
   <form action="/deposito">
   Deposito<br>
-    Nº Conta<input name="conta" type="number">
-    Valor :<input name="saque" type="number">
+    Nº Conta<input name="conta" type="number"><br>
+    Valor deposito :<input name="valor" type="number">
+    <input value="Depositar" type="submit" >
+  </form>
+</div>
+<div id="pagamento" class="collapse">
+  <form action="/pagamento">
+    Deposito<br>
+    Nº Conta<input name="conta" type="number"><br>
+    Valor pagamento:<input name="valor" type="number">
+    <input value="Pagamento" type="submit" >
+  </form>
+</div>
+<div id="transferencia" class="collapse">
+  <form action="/transferencia">
+    Deposito<br>
+    Nº Conta Origem<input name="origem" type="number"> <br>
+    Nº Conta Destino<input name="destino" type="number"><br>
+    Valor a Transferir:<input name="valor" type="number">
     <input value="Depositar" type="submit" >
   </form>
 </div>
