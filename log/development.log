@@ -15784,3 +15784,54 @@ Served asset /transacaos.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:14:43 -0200
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:Contum> at /home/mikaele/RubymineProjects/HomeBanking/app/models/contum.rb:2)
+Processing by ContaController#index as HTML
+DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:Funcionario> at /home/mikaele/RubymineProjects/HomeBanking/app/models/funcionario.rb:2)
+Completed 401 Unauthorized in 9ms
+
+
+Started GET "/funcionarios/sign_in" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:Correntistum> at /home/mikaele/RubymineProjects/HomeBanking/app/models/correntistum.rb:2)
+Completed 200 OK in 37ms (Views: 23.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conta.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /conta.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correntista.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /correntista.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funcionarios.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /funcionarios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transacaos.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /transacaos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:15:47 -0200
+Served asset /application.js - 304 Not Modified (1ms)

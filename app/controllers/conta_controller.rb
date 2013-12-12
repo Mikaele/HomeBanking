@@ -1,6 +1,6 @@
 class ContaController < ApplicationController
   before_filter :authenticate_correntistum!, :except => [:new, :index,:create,:destroy,:update]
-  before_filter :authenticate_funcionario!, :except => [:show, :index]
+  before_filter :authenticate_funcionario!
 
   # GET /conta
   # GET /conta.json
