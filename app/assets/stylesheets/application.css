@@ -12,3 +12,7 @@
  *= require_tree
  */
 
+.btn-info, .btn-warning, .btn-danger, .btn-inverse, .btn-success, .btn-primary {
+    color: #FFFFFF !important;
+}
+
