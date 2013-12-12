@@ -1,6 +1,6 @@
 class ContaController < ApplicationController
   before_filter :authenticate_correntistum!, :except => [:new,:create,:destroy,:update]
-  before_filter :authenticate_funcionario!
+  before_filter :authenticate_funcionario! ,:except=>[:index]
 
   # GET /conta
   # GET /conta.json
@@ -86,6 +86,28 @@ class ContaController < ApplicationController
 
   def saque
     @conta=Contum.find(params[:conta])
-    @conta
+    if @conta.saldo.to_f-params[:saque].to_f>=0
+      @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
+      respond_to do |format|
+        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.json { head :no_content }
+      end
+    elsif (@conta.saldo.to_f+@conta.limite.to_f)-params[:saque].to_f>=0
+      aux=@conta.saldo.to_f-params[:saque].to_f
+      if aux<0
+        @conta.limite=@conta.limite.to_f+aux
+        @conta.saldo=0
+      end
+      @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
+      respond_to do |format|
+        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.json { head :no_content }
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to "/conta",alert: "Saldo insdiponivel" }
+        format.json { head :no_content }
+      end
+    end
   end
 end

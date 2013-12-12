@@ -6,6 +6,7 @@
     <th>Primeiro corr</th>
     <th>Segundo corr</th>
     <th>Terceiro corr</th>
+    <th>Saldo</th>
     <th>Limite</th>
     <th></th>
     <th></th>
@@ -18,6 +19,7 @@
     <td><%= contum.primeiro_corr %></td>
     <td><%= contum.segundo_corr %></td>
     <td><%= contum.terceiro_corr %></td>
+    <td><%= contum.saldo %></td>
     <td><%= contum.limite %></td>
     <td><%= link_to 'Show', contum %></td>
     <td><%= link_to 'Edit', edit_contum_path(contum) %></td>
@@ -25,6 +27,12 @@
   </tr>
 <% end %>
 </table>
+
+<form action="/saque">
+Nº Conta<input name="conta" type="number">
+Valor :<input name="saque" type="number">
+ <input value="Sacar" type="submit" >
+</form>
 
 <br />
 

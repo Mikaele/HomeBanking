@@ -16,6 +16,8 @@ Homebanking::Application.routes.draw do
   resources :conta
 
      match '' => 'conta#index'
+    match '/saque' => 'conta#saque'
+
 
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
 
