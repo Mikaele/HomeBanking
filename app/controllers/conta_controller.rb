@@ -1,6 +1,7 @@
 class ContaController < ApplicationController
-  before_filter :authenticate_correntistum!, :except => [:new,:create,:destroy,:update]
-  before_filter :authenticate_funcionario! ,:except=>[:index]
+  before_filter :authenticate_funcionario! ,:only=>[:new,:create,:destroy,:update]
+  before_filter :authenticate_correntistum!,:except=>[:index,:saque]
+
 
   # GET /conta
   # GET /conta.json
@@ -89,7 +90,7 @@ class ContaController < ApplicationController
     if @conta.saldo.to_f-params[:saque].to_f>=0
       @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     elsif (@conta.saldo.to_f+@conta.limite.to_f)-params[:saque].to_f>=0
@@ -100,12 +101,12 @@ class ContaController < ApplicationController
       end
       @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     else
       respond_to do |format|
-        format.html { redirect_to "/conta",alert: "Saldo insdiponivel" }
+        format.html { redirect_to "",alert: "Saldo insdiponivel" }
         format.json { head :no_content }
       end
     end
