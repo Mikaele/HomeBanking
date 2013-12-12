@@ -1,6 +1,6 @@
 class ContaController < ApplicationController
-  before_filter :authenticate_funcionario! ,:only=>[:new,:create,:destroy,:update]
-  before_filter :authenticate_correntistum!,:except=>[:index,:saque,:deposito]
+  before_filter :authenticate_funcionario! ,:only=>[:new,:create,:index,:destroy,:update,:saque]
+  before_filter :authenticate_correntistum!,:except=>[:index,:transferencia,:deposito]
 
 
   # GET /conta
