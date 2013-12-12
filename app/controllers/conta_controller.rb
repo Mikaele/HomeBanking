@@ -119,21 +119,30 @@ class ContaController < ApplicationController
     @conta.update_attributes(:saldo=>params[:saque].to_f+@conta.saldo.to_f)
     Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
     respond_to do |format|
-      format.html { redirect_to "",alert: "Saldo insdiponivel" }
+      format.html { redirect_to "",notice: "Deposito efetuado com sucesso novo" }
       format.json { head :no_content }
     end
   end
 
-  def trasferencia
+  def transferencia
     @conta=Contum.find(params[:origem])
     @conta2=Contum.find(params[:destino])
     if (@conta.saldo.to_f+@conta.limite.to_f)-params[:valor].to_f>=0
       aux=@conta.saldo.to_f-params[:valor].to_f
       if aux <=0
         @conta.limite=@conta.limite-aux
-        @conta2.update_attribute(:saldo=>@conta2.saldo+params[:valor].to_f)
+        @conta.saldo=0
+      else
+        @conta.saldo=aux
       end
-    end
+        @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
+        @conta2.update_attribute(:saldo,(@conta2.saldo+params[:valor].to_f))
+        Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:destino],:tipo=>'transf', :valor=>params[:saque])
+        respond_to do |format|
+          format.html { redirect_to "",notice: "Tranferencia efetuada com sucesso!" }
+          format.json { head :no_content }
+        end
+      end
 
   end
 end

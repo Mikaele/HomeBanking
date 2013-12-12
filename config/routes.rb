@@ -18,6 +18,7 @@ Homebanking::Application.routes.draw do
      match '' => 'conta#index'
     match '/saque' => 'conta#saque'
     match '/deposito' => 'conta#deposito'
+    match 'transferencia' => 'conta#transferencia'
 
 
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
