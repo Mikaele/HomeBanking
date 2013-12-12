@@ -89,7 +89,7 @@ class ContaController < ApplicationController
     @conta=Contum.find(params[:conta])
     if @conta.saldo.to_f-params[:saque].to_f>=0
       @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
-      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:saque], :tipo=>'saque', :valor=>params[:saque])
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
         format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
@@ -101,7 +101,7 @@ class ContaController < ApplicationController
         @conta.saldo=0
       end
       @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
-      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:saque], :tipo=>'saque', :valor=>params[:saque])
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
         format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
@@ -117,6 +117,7 @@ class ContaController < ApplicationController
   def deposito
     @conta=Contum.find(params[:conta])
     @conta.update_attributes(:saldo=>params[:saque])
+    Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
     respond_to do |format|
       format.html { redirect_to "",alert: "Saldo insdiponivel" }
       format.json { head :no_content }
