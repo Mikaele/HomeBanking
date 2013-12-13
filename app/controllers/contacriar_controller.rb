@@ -118,7 +118,7 @@ class ContacriarController < ApplicationController
   def deposito
     @conta=Contum.find(params[:conta])
     @conta.update_attributes(:saldo=>params[:saque].to_f+@conta.saldo.to_f)
-    Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
+    Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:conta], :tipo=>'deposito', :valor=>params[:saque])
     respond_to do |format|
       format.html { redirect_to contacriar_url,notice: "Deposito efetuado com sucesso novo" }
       format.json { head :no_content }
@@ -138,8 +138,7 @@ class ContacriarController < ApplicationController
       end
         @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
         @conta2.update_attribute(:saldo,(@conta2.saldo+params[:valor].to_f))
-        Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:destino],:tipo=>'transf', :valor=>params[:saque])
-        Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:origem],:tipo=>'transf', :valor=>params[:saque])
+        Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:origem], :nro_conta_transf=>params[:destino],:tipo=>'transf', :valor=>params[:saque])
 
       @conta
         respond_to do |format|
