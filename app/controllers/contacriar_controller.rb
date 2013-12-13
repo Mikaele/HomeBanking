@@ -1,5 +1,6 @@
-class ContaController < ApplicationController
-  before_filter :authenticate_correntistum!
+class ContacriarController < ApplicationController
+  before_filter :authenticate_funcionario!
+
 
   # GET /conta
   # GET /conta.json
