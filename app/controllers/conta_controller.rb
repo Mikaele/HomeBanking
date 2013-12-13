@@ -1,8 +1,7 @@
 class ContaController < ApplicationController
-  before_filter :authenticate_correntistum!
-
-  # GET /conta
-  # GET /conta.json
+  before_filter :authenticate_funcionario!
+# GET /conta
+# GET /conta.json
   def index
     @conta = Contum.all
 

@@ -1,17 +1,19 @@
 class ContacriarController < ApplicationController
-  before_filter :authenticate_funcionario!
+      before_filter :authenticate_correntistum!
 
 
-  # GET /conta
-  # GET /conta.json
-  def index
-    @conta = Contum.all
+      def index
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @conta }
-    end
-  end
+        @conta = Contum.where("primeiro_corr = '#{current_correntistum.cpf}' or  segundo_corr= '#{current_correntistum.cpf}' or terceiro_corr  = '#{current_correntistum.cpf}'")
+
+        respond_to do |format|
+          format.html # index.html.erb
+          format.json { render json: @conta }
+        end
+
+
+      end
+
 
   # GET /conta/1
   # GET /conta/1.json

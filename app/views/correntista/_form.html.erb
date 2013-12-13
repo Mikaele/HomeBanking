@@ -1,33 +1,33 @@
-<%= form_for(@correntistum) do |f| %>
-  <% if @correntistum.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@correntistum.errors.count, "error") %> prohibited this correntistum from being saved:</h2>
+<form accept-charset="UTF-8" action="/correntista" class="new_correntistum" id="new_correntistum" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="AgdhF+hKtS+FdNHQMYyuCsBht19DLx5hoYysHcf582s="></div>
 
-      <ul>
-      <% @correntistum.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
+  <h2>Cadastrar Correntista</h2>
   <div class="field">
-    <%= f.label :cpf %><br />
-    <%= f.text_field :cpf %>
+    <label for="correntistum_cpf">Cpf</label>
+    <input id="correntistum_cpf" name="correntistum[cpf]" size="30" type="text">
   </div>
+  <br>
   <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
+    <label for="correntistum_nome">Nome</label>
+    <input id="correntistum_nome" name="correntistum[nome]" size="30" type="text">
   </div>
+  <br>
   <div class="field">
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
+    <label for="correntistum_endereco">Endereco</label>
+    <input id="correntistum_endereco" name="correntistum[endereco]" size="30" type="text">
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  <br>
+
+
+  <div><label for="correntistum_email">Email</label>
+    <input autofocus="autofocus" id="correntistum_email" name="correntistum[email]" size="30" type="email"></div>
+  <br>
+  <div><label for="correntistum_password">Password</label>
+    <input id="correntistum_password" name="correntistum[password]" size="30" type="password"></div>
+  <br>
+  <div><label for="correntistum_password_confirmation">Password confirmation</label>
+    <input id="correntistum_password_confirmation" name="correntistum[password_confirmation]" size="30" type="password"></div>
+
+  <br>
+  <div><input name="commit" type="submit" value="Cadastrar"></div>
+</form>
