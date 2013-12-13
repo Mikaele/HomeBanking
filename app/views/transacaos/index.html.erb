@@ -1,18 +1,16 @@
 <h1 class="text-center">Todas as Transações</h1>
 
-<%= link_to 'Nova Transação', new_transacao_path, class:"btn" %>
+<br />
 
 <table class="table table-hover table-condensed">
+  <thead>
   <tr>
     <th>Codigo</th>
     <th>Tipo</th>
-    <th>Nro conta</th>
-    <th>Nro conta transf</th>
+    <th>Conta Origem</th>
+    <th>Conta Destino</th>
     <th>Valor</th>
     <th>Data</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
   </thead>
 
@@ -24,10 +22,7 @@
     <td><%= transacao.nro_conta %></td>
     <td><%= transacao.nro_conta_transf %></td>
     <td><%= transacao.valor %></td>
-    <td><%= transacao.data %></td>
-    <td><%= link_to 'Visualizar', transacao, class:"btn btn-primary" %></td>
-    <td><%= link_to 'Editar', edit_transacao_path(transacao), class:"btn btn-warning" %></td>
-    <td><%= link_to 'Apagar', transacao, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+    <td><%= transacao.data.strftime("%d/%m/%y") %></td>
   </tr>
 <% end %>
 </tbody>

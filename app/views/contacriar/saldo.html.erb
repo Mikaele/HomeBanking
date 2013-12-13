@@ -1,5 +1,7 @@
 
 
 <p class="well">
-Saldo na conta <%= @conta.numero%>  é de R$<%= @conta.saldo %>
+Saldo na conta <%= @conta.numero%>  é de R$ <%= @conta.saldo %>
 </p>
+
+<%= link_to 'Voltar', :back, class:"btn btn-inverse" %>
