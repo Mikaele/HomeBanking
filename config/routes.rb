@@ -3,7 +3,6 @@ Homebanking::Application.routes.draw do
 
   devise_for :funcionarios
 
-
   resources :transacaos
 
 
@@ -17,9 +16,12 @@ Homebanking::Application.routes.draw do
   resources :contacriar
 
 
+    match '/' => 'conta#index'
     match '/saque' => 'conta#saque'
     match '/deposito' => 'conta#deposito'
-    match 'transferencia' => 'conta#transferencia'
+  match '/transferencia' => 'conta#transferencia'
+  match '/usu/deposito' => 'contacriar#deposito'
+    match '/usu/transferencia' => 'contacriar#transferencia'
 
 
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

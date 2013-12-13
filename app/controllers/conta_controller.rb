@@ -88,7 +88,7 @@ class ContaController < ApplicationController
       @conta.update_attribute(:saldo,@conta.saldo.to_f-params[:saque].to_f)
       Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
-        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to conta_url,alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     elsif (@conta.saldo.to_f+@conta.limite.to_f)-params[:saque].to_f>=0
@@ -100,12 +100,12 @@ class ContaController < ApplicationController
       @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
       Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today, :nro_conta=>params[:conta], :tipo=>'saque', :valor=>params[:saque])
       respond_to do |format|
-        format.html { redirect_to "",alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
+        format.html { redirect_to conta_url,alert: "Saque Efetuado com sucesso Saldo diponivel#{@conta.saldo}" }
         format.json { head :no_content }
       end
     else
       respond_to do |format|
-        format.html { redirect_to "",alert: "Saldo insdiponivel" }
+        format.html { redirect_to conta_url,alert: "Saldo insdiponivel" }
         format.json { head :no_content }
       end
     end
@@ -116,7 +116,7 @@ class ContaController < ApplicationController
     @conta.update_attributes(:saldo=>params[:saque].to_f+@conta.saldo.to_f)
     Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:saque], :tipo=>'deposito', :valor=>params[:saque])
     respond_to do |format|
-      format.html { redirect_to "",notice: "Deposito efetuado com sucesso novo" }
+      format.html { redirect_to conta_url,notice: "Deposito efetuado com sucesso novo" }
       format.json { head :no_content }
     end
   end
@@ -134,9 +134,10 @@ class ContaController < ApplicationController
       end
         @conta.update_attributes(:saldo=>@conta.saldo,:limite=>@conta.limite)
         @conta2.update_attribute(:saldo,(@conta2.saldo+params[:valor].to_f))
-        Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:destino],:tipo=>'transf', :valor=>params[:saque])
-        respond_to do |format|
-          format.html { redirect_to "",notice: "Tranferencia efetuada com sucesso!" }
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:destino],:tipo=>'transf', :valor=>params[:saque])
+      Transacao.create(:codigo=>DateTime.now.to_i, :data=>Date.today,:nro_conta=>params[:valor], :nro_conta_transf=>params[:origem],:tipo=>'transf', :valor=>params[:saque])
+      respond_to do |format|
+          format.html { redirect_to conta_url,notice: "Tranferencia efetuada com sucesso!" }
           format.json { head :no_content }
         end
       end
