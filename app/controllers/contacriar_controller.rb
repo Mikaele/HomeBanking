@@ -148,4 +148,9 @@ class ContacriarController < ApplicationController
       end
 
   end
+
+  def extrato
+           @extrato=Transacao.where("nro_conta = ?  and data > ?",params[:conta],params[:data].to_date-30)
+  end
+
 end
