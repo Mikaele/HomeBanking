@@ -15,21 +15,25 @@
     <%= f.label :codigo %><br />
     <%= f.text_field :codigo %>
   </div>
+
   <div class="field">
     <%= f.label :nome %><br />
     <%= f.text_field :nome %>
   </div>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
+
   <div class="field">
     <%= f.label :password, "senha" %><br />
     <%= f.text_field :password %>
   </div>
+
   <div class="field">
     <%= f.label :funcao %><br />
-    <%= f.text_field :funcao %>
+    <%= f.select :funcao, (['Gerente','Caixa','Atendente']) %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Cpf:</b>
+  <b>CPF:</b>
   <%= @correntistum.cpf %>
 </p>
 
@@ -26,5 +26,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_correntistum_path(@correntistum) %> |
-<%= link_to 'Back', correntista_path %>
+<%= link_to 'Editar', edit_correntistum_path(@correntistum), class:"btn btn-warning" %> |
+<%= link_to 'Voltar', correntista_path, class:"btn btn-inverse" %>
