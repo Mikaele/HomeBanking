@@ -4,45 +4,52 @@
 
         <h2>Cadastrar Correntista</h2>
     <div class="field">
-      <%= f.label :cpf %><br />
+      <%= f.label :cpf %>
       <%= f.text_field :cpf %>
     </div>
+        <br />
     <div class="field">
-      <%= f.label :nome %><br />
+      <%= f.label :nome %>
       <%= f.text_field :nome %>
     </div>
+        <br />
     <div class="field">
-      <%= f.label :endereco %><br />
+      <%= f.label :endereco %>
       <%= f.text_field :endereco %>
     </div>
+        <br />
 
     <%elsif resource_name==:funcionario%>
        <h2> Cadastrar Funcionario </h2>
 
         <div class="field">
-          <%= f.label :codigo %><br />
+          <%= f.label :codigo %>
           <%= f.text_field :codigo %>
         </div>
+        <br />
         <div class="field">
-          <%= f.label :nome %><br />
+          <%= f.label :nome %>
           <%= f.text_field :nome %>
         </div>
+        <br />
         <div class="field">
           <%= f.label :funcao %><br />
-          <%= f.text_field :funcao %>
+          <%= f.select :funcao, (['Gerente','Caixa','Atendente']) %>
         </div>
+        <br />
 
     <% end%>
 
-  <div><%= f.label :email %><br />
+  <div><%= f.label :email %>
   <%= f.email_field :email, :autofocus => true %></div>
-
-  <div><%= f.label :password %><br />
+    <br />
+  <div><%= f.label :password %>
   <%= f.password_field :password %></div>
-
-  <div><%= f.label :password_confirmation %><br />
+    <br />
+  <div><%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %></div>
 
+    <br />
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 
