@@ -24,6 +24,8 @@ Homebanking::Application.routes.draw do
     match '/usu/transferencia' => 'contacriar#transferencia'
     match '/usu/extrato' => 'contacriar#extrato'
     match '/extrato' => 'conta#extrato'
+    match '/usu/saldo' => 'contacriar#saldo'
+    match '/saldo' => 'conta#saldo'
 
 
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

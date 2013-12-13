@@ -44,6 +44,7 @@
 <a class="btn collapse-data-btn" data-toggle="collapse" href="#pagamento">Pagamentos de Contas</a>
 <a class="btn collapse-data-btn" data-toggle="collapse" href="#transferencia">Tranferência</a>
 <a class="btn collapse-data-btn" data-toggle="collapse" href="#extrato">Extrato</a>
+<a class="btn collapse-data-btn" data-toggle="collapse" href="#saldo">Saldo</a>
 <br><br>
 
 <div id="saque" class="collapse">
@@ -92,6 +93,13 @@
     Nº Conta: <input name="conta" type="number"> <br>
     Data: <input name="data" type="text" placeholder="aaaa-mm-dd">
     <input value="enviar" type="submit" class="btn btn-success" >
+  </form>
+</div>
+<div id="saldo" class="collapse">
+  <form action="/saldo">
+    Saldo<br>
+    Nº Conta  <input name="conta" type="number"> <br>
+    <input value="saldo" type="submit" class="btn btn-success" >
   </form>
 </div>
 

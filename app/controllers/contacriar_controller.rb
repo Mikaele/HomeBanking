@@ -153,4 +153,8 @@ class ContacriarController < ApplicationController
            @extrato=Transacao.where("nro_conta = ?  and data > ?",params[:conta],params[:data].to_date-30)
   end
 
+  def saldo
+        @conta=Contum.find_by_numero(params[:conta])
+  end
+
 end
