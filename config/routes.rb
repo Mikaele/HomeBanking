@@ -14,6 +14,7 @@ Homebanking::Application.routes.draw do
 
 
   resources :conta
+  resources :contacriar
 
      match '' => 'conta#index'
     match '/saque' => 'conta#saque'
